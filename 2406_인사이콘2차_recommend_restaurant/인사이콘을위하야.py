@@ -27,7 +27,7 @@ rests = df.drop_duplicates(subset=['restaurant_name', 'second_count_review', 'di
 client = OpenAI(api_key = st.secrets["default"]["api_key"])
 
 # 상단 제목
-st.title("UNMAGO")
+st.title("TPO별음식추천서비스")
 
 # 데이터프레임 초기화
 if 'initial_data' not in st.session_state:
